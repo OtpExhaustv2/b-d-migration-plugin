@@ -44,7 +44,6 @@ file.addEventListener('change', () => {
                 drop.appendChild(option);
             })
 
-
             drop.name = 'types[]';
             tdDrop.appendChild(drop);
             trDrop.appendChild(tdDrop);
@@ -78,13 +77,13 @@ form.addEventListener('submit', async (e) => {
                 await excelToSql.readFile();
                 document.querySelector('#query').innerHTML = excelToSql.turnIntoQuery();
             } else {
-                console.log("you forgot the datatable name!");
+                alert("You forgot the database name!");
             }
         } else {
-            console.log("provide xlsx file pls");
+            alert("Provide a xlsx file please!");
         }
     } else {
-        console.log("provide a file pls");
+        alert("Provide a file please!");
     }
 
 });
