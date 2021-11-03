@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="../dist/main.js"></script>
+
+<div class="container">
+    <h1>Migration plugin</h1>
+
+    <form>
+        <input type="file" id="file">
+        <h2 class="hide">Headers</h2>
+        <div class="hide">
+            <label for="datatable">Datatable's Name:</label>
+            <input type="text" id="datatable">
+        </div>
+        <div id="headers">
+
+        </div>
+        <input type="submit" id="submit" class="hide">
+    </form>
+    <textarea class="hide" id="query" cols="200" rows="20"></textarea>
+</div>
+
+<script src="../dist/main.js"></script>
 </body>
 </html>
