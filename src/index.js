@@ -99,7 +99,5 @@ const generateOption = (fields, dropTypes) => {
         }
     });
 
-    console.log(options);
-
     return options;
 }
